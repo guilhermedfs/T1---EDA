@@ -3,4 +3,6 @@
 
  int dicionario();
 
+ extern int baz;
+
  #endif

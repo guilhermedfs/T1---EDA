@@ -3,6 +3,8 @@
 #include "menu.h"
 #include "dicionario.h"
 
+int baz;
+
 int main (){
     int n;
    switch (menu())
@@ -15,7 +17,9 @@ int main (){
        break;
    }
 
+    if(baz == 0){
    printf("%d\n", n);
+    }
 
     return 0;
 }

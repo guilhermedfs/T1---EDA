@@ -12,8 +12,10 @@ int dicionario(){
     scanf("%s", nome);
     strcat(nome, ".txt");
 
-    arq = fopen(nome, "r");
-
+    if (!(arq = fopen(nome, "r"))){
+        perror("fopen");
+        baz = 1;
+    }else{
     while (fread (&c, sizeof(char), 1, arq))
     {
         if(c == letra){
@@ -22,6 +24,6 @@ int dicionario(){
     }
 
     fclose(arq);
-
+    }
     return nPalavras + 1;
 }
