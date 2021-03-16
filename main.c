@@ -7,6 +7,8 @@
 int baz;
 
 int main (){
+    FILE *bowA = NULL;
+    FILE *bowB = NULL;
     int n, *ContA, *ContB;
     char nomeD[30];
    switch (menu())
@@ -17,11 +19,13 @@ int main (){
         ContB = (int*) calloc(n, sizeof(int));
        break;
    case 2:
-        leituraTr();
+        bowA=leituraTr(nomeD, ContA, n);
         break;
    case 3:
-        leituraTr();
+        bowB=leituraTr(nomeD, ContB, n);
         break;
+   case 4:
+        Exibir_Bows(nomeD, ContA, ContB, n);
    default:
        break;
    }
