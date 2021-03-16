@@ -7,11 +7,13 @@
 int baz;
 
 int main (){
-    int n;
+    int n, *ContA, *ContB;
    switch (menu())
    {
    case 1:
         n = dicionario();
+        ContA = (int*) calloc(n, sizeof(int));
+        ContB = (int*) calloc(n, sizeof(int));
        break;
    case 2:
         leituraTr();
@@ -26,6 +28,9 @@ int main (){
     if(baz == 0){
    printf("%d\n", n);
     }
+    
+    free(ContA);
+    free(ContB);
 
     return 0;
 }
