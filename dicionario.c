@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int dicionario(){
+void dicionario(int *n, char *nomeD){
     FILE *arq;
 
     char c, letra = '\n', nome[100];
@@ -11,6 +11,8 @@ int dicionario(){
     printf("\nInsira o nome do dicionário: ");
     scanf("%s", nome);
     strcat(nome, ".txt");
+    
+    strcpy(nomeD, nome);
 
     if (!(arq = fopen(nome, "r"))){
         perror("fopen");
@@ -25,5 +27,5 @@ int dicionario(){
 
     fclose(arq);
     }
-    return nPalavras + 1;
+    *n = nPalavras + 1;
 }
