@@ -1,3 +1,6 @@
+#include "menu.h"
+#include <stdio.h>
+
 int menu(){
 
     int option;
@@ -13,6 +16,6 @@ int menu(){
     scanf("%d", &option);
 
     return option;
-    
+
  }
 

@@ -1,8 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "menu.c"
+#include "menu.h"
+#include "dicionario.h"
 
 int main (){
-   menu();
+    int n;
+   switch (menu())
+   {
+   case 1:
+        n = dicionario();
+       break;
+   
+   default:
+       break;
+   }
+
+   printf("%d\n", n);
+
     return 0;
 }
