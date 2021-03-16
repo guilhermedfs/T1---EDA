@@ -2,7 +2,10 @@
 #define LEITURATR_H_INCLUDED
 
 
-#include "leituraTR.c"
+FILE* leituraTR(char nomeD[], int *Cont, int tamCont);
+void Exibir_Bows(char nomeD[], int *ContA, int *ContB, int tamCont);
+
+
 
 
 
