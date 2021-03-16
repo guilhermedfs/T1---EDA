@@ -8,10 +8,11 @@ int baz;
 
 int main (){
     int n, *ContA, *ContB;
+    char nomeD[30];
    switch (menu())
    {
    case 1:
-        n = dicionario();
+        dicionario(&n, nomeD);
         ContA = (int*) calloc(n, sizeof(int));
         ContB = (int*) calloc(n, sizeof(int));
        break;
