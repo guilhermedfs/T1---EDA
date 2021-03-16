@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "menu.h"
 #include "dicionario.h"
+#include "leituraTR.h"
 
 int baz;
 
@@ -12,7 +13,12 @@ int main (){
    case 1:
         n = dicionario();
        break;
-   
+   case 2:
+        leituraTr();
+        break;
+   case 3:
+        leituraTr();
+        break;
    default:
        break;
    }
