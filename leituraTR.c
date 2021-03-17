@@ -1,7 +1,7 @@
-#include "leituraTR.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include "leituraTR.h"
 
 FILE* leituraTR(char nomeD[], int *Cont, int tamCont)
 {
@@ -28,7 +28,7 @@ FILE* leituraTR(char nomeD[], int *Cont, int tamCont)
             Cont[i]++;
     }  
     arq = fopen(nomeArq, "r");
-    fprintf(arqSaida,"%s \t %d\n", string, Cont[i]);
+    fprintf(arqSaida,"%s - %d\n", string, Cont[i]);
 
   }
   
