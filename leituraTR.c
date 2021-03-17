@@ -23,7 +23,7 @@ FILE* leituraTR(char nomeD[], int *Cont, int tamCont)
   
   for (int i=0;  fscanf(arqD, "%s\n", string)!=EOF  ; i++)
   {
-    while (fscanf(arq, "%s", string2)!=EOF))
+    while (fscanf(arq, "%s", string2)!=EOF)
     {
         if(strstr(string2,string)!=0)
             Cont[i]++;
