@@ -1,6 +1,6 @@
-OBJS	= main.o menu.o dicionario.o
-SOURCE	= main.c menu.c dicionario.c
-HEADER	= menu.h dicionario.h
+OBJS	= main.o menu.o dicionario.o leituraTR.o
+SOURCE	= main.c menu.c dicionario.c leituraTR.c
+HEADER	= menu.h dicionario.h leituraTR.h
 OUT	= prog
 CC	 = gcc
 FLAGS	 = -g -c -Wall
@@ -17,6 +17,9 @@ menu.o: menu.c
 
 dicionario.o: dicionario.c
 	$(CC) $(FLAGS) dicionario.c 
+	
+leituraTR.o: leituraTR.c
+	$(CC) $(FLAGS) leituraTR.c
 
 leituraTR.o: leituraTR.c
 	$(CC) $(FLAGS) leituraTR.c
