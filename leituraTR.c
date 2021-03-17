@@ -1,8 +1,7 @@
+#include "leituraTR.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-
-#include "leituraTR.h"
 
 FILE* leituraTR(char nomeD[], int *Cont, int tamCont)
 {

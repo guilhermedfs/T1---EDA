@@ -1,5 +1,5 @@
-#ifndef LEITURATR_H_INCLUDED
-#define LEITURATR_H_INCLUDED
+#ifndef LEITURATR_H
+#define LEITURATR_H
 
 
 FILE* leituraTR(char nomeD[], int *Cont, int tamCont);
@@ -10,4 +10,4 @@ FILE* leituraTR(char nomeD[], int *Cont, int tamCont);
 
 
 
-#endif // LEITURATR_H_INCLUDED
+#endif // LEITURATR_H

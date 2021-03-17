@@ -1,9 +1,7 @@
 #include "menu.h"
 #include <stdio.h>
 
-int menu(){
-
-    int option;
+void menu(){
 
     printf("Indique a função a ser executada: \n\n");
     printf("1 - Ler arquivo de dicionário\n");
@@ -13,9 +11,6 @@ int menu(){
     printf("5 - Mostrar similaridade entre os dois textos\n");
     printf("6 - Sair\n\n");
     printf("Insira o número indicando a função desejada: ");
-    scanf("%d", &option);
-
-    return option;
 
  }
 
