@@ -21,14 +21,16 @@ FILE* leituraTR(char nomeD[], int *Cont, int tamCont)
   arqSaida = fopen(nomeArqSaida, "w");
   arqD = fopen(nomeD, "r");
   
-  for (int i=0;  fscanf(arqD, "%s\n", string)!=EOF)  ; i++)
+  for (int i=0;  fscanf(arqD, "%s\n", string)!=EOF  ; i++)
   {
-    while (fscanf(arq, "%s", string2)!=EOF))
+    while (fscanf(arq, "%s", string2)!=EOF)
     {
-        if(strstr(string,string2)!=0)
+        if(strstr(string2,string)!=0)
             Cont[i]++;
     }  
+    arq = fopen(nomeArq, "r");
     fprintf(arqSaida,"%s \t %d\n", string, Cont[i]);
+
   }
   
   
