@@ -17,9 +17,6 @@ menu.o: menu.c
 
 dicionario.o: dicionario.c
 	$(CC) $(FLAGS) dicionario.c 
-	
-leituraTR.o: leituraTR.c
-	$(CC) $(FLAGS) leituraTR.c
 
 leituraTR.o: leituraTR.c
 	$(CC) $(FLAGS) leituraTR.c
