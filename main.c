@@ -30,7 +30,7 @@ int main (){
                     bowB=leituraTR(nomeD, ContB, n);
                     break;
                case 4:
-                    //Exibir_Bows(nomeD, ContA, ContB, n);
+                    Exibir_Bows(bowA, bowB);
                     break;
                case 5:
                     break;

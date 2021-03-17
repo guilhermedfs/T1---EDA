@@ -28,7 +28,7 @@ FILE* leituraTR(char nomeD[], int *Cont, int tamCont)
             Cont[i]++;
     }  
     arq = fopen(nomeArq, "r");
-    fprintf(arqSaida,"%s - %d\n", string, Cont[i]);
+    fprintf(arqSaida,"%s %d\n", string, Cont[i]);
 
   }
   
@@ -40,5 +40,28 @@ FILE* leituraTR(char nomeD[], int *Cont, int tamCont)
   fclose(arqD);
   
   return arqSaida;
+
+}
+
+void Exibir_Bows(FILE* bowA, FILE* bowB){
+
+  FILE* arqA, arqB;
+  char string[30];
+  int contA;
+
+  arqA = fopen(bowA, "r");
+  arqB = fopen(bowB, "r");
+
+
+  for (int i=0;  fscanf(arqA, "%s %d\n", string, contA)!=EOF  ; i++)
+  {
+    printf("String arq A = %s - %d\n", string, contA);
+
+  }
+
+
+
+  fclose(arqA);
+  fclose(arqB);
 
 }
