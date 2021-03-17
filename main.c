@@ -19,10 +19,10 @@ int main (){
         ContB = (int*) calloc(n, sizeof(int));
        break;
    case 2:
-        bowA=leituraTr(nomeD, ContA, n);
+        bowA=leituraTR(nomeD, ContA, n);
         break;
    case 3:
-        bowB=leituraTr(nomeD, ContB, n);
+        bowB=leituraTR(nomeD, ContB, n);
         break;
    case 4:
         Exibir_Bows(nomeD, ContA, ContB, n);
