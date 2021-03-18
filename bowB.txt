@@ -1,3 +1,0 @@
-morango 1
-banana 1
-melão 0
