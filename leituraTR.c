@@ -3,18 +3,29 @@
 #include <stdlib.h>
 #include "leituraTR.h"
 
-FILE* leituraTR(char nomeD[], char nomeBow[], int *Cont, int tamCont)
+FILE* leituraTR(char nomeD[], char nomeBow[], int *Cont, int tamCont, int numTR)
 {
   FILE *arq, *arqSaida, *arqD;
   char nomeArq[30], nomeArqSaida[30], string[30], string2[30];
   
-  printf("\nInforme o nome do Texto de Referencia: ");
-  scanf("%s", nomeArq);
-  strcat(nomeArq, ".txt");
-  
-  printf("\nInforme o nome do Arquivo de Saída: ");
-  scanf("%s", nomeArqSaida);
-  strcat(nomeArqSaida, ".txt");
+  switch(numTR){
+      case 1:
+        printf("\nInforme o nome do Texto de Referencia A: ");
+        scanf("%s", nomeArq);
+        strcat(nomeArq, ".txt");
+        printf("\nInforme o nome do Arquivo de Saída: ");
+        scanf("%s", nomeArqSaida);
+        strcat(nomeArqSaida, ".txt");
+        break;
+      case 2:
+        printf("\nInforme o nome do Texto de Referencia B: ");
+        scanf("%s", nomeArq);
+        strcat(nomeArq, ".txt");
+        printf("\nInforme o nome do Arquivo de Saída: ");
+        scanf("%s", nomeArqSaida);
+        strcat(nomeArqSaida, ".txt");
+        break;
+  }
 
   strcpy(nomeBow, nomeArqSaida);
 

@@ -2,7 +2,7 @@
 #define LEITURATR_H
 
 
-FILE* leituraTR(char nomeD[], char nomeBow[], int *Cont, int tamCont);
+FILE* leituraTR(char nomeD[], char nomeBow[], int *Cont, int tamCont, int numTR);
 void Exibir_Bows(FILE* bowA, char nomeBowA[], FILE* bowB, char nomeBowB[]);
 
 
