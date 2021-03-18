@@ -6,6 +6,7 @@
 - Weslley Alves de Barros - 200044567
 - Guilherme Daniel Fernandes da Silva - 180018019
 - Victor Eduardo Araújo Ribeiro - 190038926
+- Luan Mendes Gonçalves Freitas - 150015585
 
 ## Requerimentos para execução do cógido
 - Makefile
