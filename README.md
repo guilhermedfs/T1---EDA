@@ -13,8 +13,8 @@
 - GCC
 
 ## Instrução para execução do código
-Executar no terminal o código: make run
-Caminho para inserção dos arquivos de Dicionário e Textos de Referência: .../T1-EDA/bin 
+- Executar no terminal o código: make run
+- Caminho para inserção dos arquivos de Dicionário e Textos de Referência: .../T1-EDA/bin 
 
 ## Análise Assintótica:
 - Notação BigO: Para a notação BigO o código apresenta a complexidade O(n³).          
