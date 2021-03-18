@@ -14,17 +14,13 @@ FILE* leituraTR(char nomeD[], char nomeBow[], int *Cont, int tamCont, int numTR)
         printf("\nInforme o nome do Texto de Referencia A: ");
         scanf("%s", nomeArq);
         strcat(nomeArq, ".txt");
-        printf("\nInforme o nome do Arquivo de Saída: ");
-        scanf("%s", nomeArqSaida);
-        strcat(nomeArqSaida, ".txt");
+        strcat(nomeArqSaida, "bowA.txt");
         break;
       case 2:
         printf("\nInforme o nome do Texto de Referencia B: ");
         scanf("%s", nomeArq);
         strcat(nomeArq, ".txt");
-        printf("\nInforme o nome do Arquivo de Saída: ");
-        scanf("%s", nomeArqSaida);
-        strcat(nomeArqSaida, ".txt");
+        strcat(nomeArqSaida, "bowB.txt");
         break;
   }
 
