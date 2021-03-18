@@ -11,8 +11,9 @@
 ## Requerimentos para execução do cógido
 - Makefile
 - GCC
+
 ## Instrução para execução do código
-Código: make -f makefile.mk && ./prog
+Executar no terminal o código: make run
 
 ## Análise Assintótica:
 - Notação BigO: Para a notação BigO o código apresenta a complexidade O(n³).          
