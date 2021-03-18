@@ -3,7 +3,7 @@
 
 
 
-void DistEuclid(int PalavrasD, int *Cont1, int *Cont2){
+void DistEuclid(int PalavrasD, int *Cont1, int *Cont2);
 
 
 
