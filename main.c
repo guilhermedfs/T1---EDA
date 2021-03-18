@@ -33,7 +33,8 @@ int main (){
                case 4:                                                  //O(n) <- onde n é a uma estrura de repetição simples, dependendo do número de palavras de um arquivo
                     Exibir_Bows(nomeD, ContA, ContB, n);    
                     break;
-               case 5:                                                  
+               case 5:     
+                    DistEuclid(n, ContA, ContB);                                             
                     break;
                case 6:
                     printf("Obrigado pela visita e volte sempre!!!\n");
