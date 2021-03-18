@@ -35,7 +35,7 @@ int main (){
                case 5:
                     break;
                case 6:
-
+                    printf("Obrigado pela visita e volte sempre!!!\n");
                     break;
                default:
                     break;

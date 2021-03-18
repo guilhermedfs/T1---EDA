@@ -4,6 +4,7 @@
 void menu(){
 
     system("clear || cls") ;
+    printf("---------------------------------- BOWS ----------------------------------");
     printf("Indique a função a ser executada: \n\n");
     printf("1 - Ler arquivo de dicionário\n");
     printf("2 - Ler arquivo contendo texto de referência A (TRA)\n");
