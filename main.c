@@ -24,10 +24,10 @@ int main (){
                     ContB = (int*) calloc(n, sizeof(int));
                     break;
                case 2:
-                    bowA=leituraTR(nomeD, nomeBowA, ContA, n);
+                    bowA=leituraTR(nomeD, ContA, n, 1);
                     break;
                case 3:
-                    bowB=leituraTR(nomeD, nomeBowB, ContB, n);
+                    bowB=leituraTR(nomeD, ContB, n, 2);
                     break;
                case 4:
                     Exibir_Bows(bowA, nomeBowA, bowB, nomeBowB);
@@ -35,6 +35,7 @@ int main (){
                case 5:
                     break;
                case 6:
+
                     break;
                default:
                     break;
@@ -45,8 +46,8 @@ int main (){
    printf("%d\n", n);
     }
     
-    free(ContA);
-    free(ContB);
+     free (ContA);
+     free(ContB);
 
     return 0;
 }
