@@ -45,9 +45,6 @@ int main (){
            }                            
     }                                                                        //Complexidade do while: Ω(6*n²)  ->Melhor dos casos usuário utiliza cada funcionalidade uma vez,
                                                                              //                       O(n*2n²) pior dos casos usuário ultiliza n vezes;
-    if(baz == 0){                                                            //O(1)
-   printf("%d\n", n);                                                   
-    }
     
      free (ContA);                                                           //O(1)
      free(ContB);                                                            //O(1)
