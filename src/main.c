@@ -10,7 +10,7 @@ int baz;                                                                    //O(
 int main (){                                                                                
     FILE *bowA = NULL;                                                      //O(1) 
     FILE *bowB = NULL;                                                      //O(1)
-    int op=1, n, *ContA, *ContB;                                            //O(1)
+    int op=1, n = 0, *ContA, *ContB, bowAn = 0, bowBn = 0;                                        //O(1)
     char nomeD[30], nomeBowA[30], nomeBowB[30];                             //O(3)    
                                                                         
     while(op!=6)                                                        
@@ -25,17 +25,40 @@ int main (){
                     ContA = (int*) calloc(n, sizeof(int));
                     ContB = (int*) calloc(n, sizeof(int));
                     break;
-               case 2:                                                      //O(n²) <- estrura de repetições aninhadas,e ambas dependentes do número de palavras do arquivo em todo caso
-                    bowA=leituraTR(nomeD, nomeBowA, ContA, n, 1);                 
+               case 2:
+                    if( n!= 0){                                               //O(n²) <- estrura de repetições aninhadas,e ambas dependentes do número de palavras do arquivo em todo caso
+                    bowA=leituraTR(nomeD, nomeBowA, ContA, n, 1);
+                    bowAn = 1; 
+                    } else {
+                         printf("Você não indicou nenhum dicionário. Indique e tente novamente. \n");
+                    }               
                     break;
-               case 3:                                                      //O(n²) <- estrura de repetições aninhadas,e ambas dependentes do número de palavras do arquivo em todo caso
+               case 3:
+                    if( n!= 0){                                                        //O(n²) <- estrura de repetições aninhadas,e ambas dependentes do número de palavras do arquivo em todo caso
                     bowB=leituraTR(nomeD, nomeBowB, ContB, n, 2);
+                    bowBn = 1; 
+                    } else {
+                         printf("Você não indicou nenhum dicionário. Indique e tente novamente. \n");
+                    }
                     break;
-               case 4:                                                      //O(n) <- onde n é a uma estrura de repetição simples, dependendo do número de palavras de um arquivo
-                    Exibir_Bows(nomeD, ContA, ContB, n);    
+               case 4:
+                    if(bowAn == 0){
+                         printf("Indique o texto A primeiramente.\n");
+                    } else if(bowBn == 0){
+                         printf("Indique o texto B primeiramente.\n");
+                    } else {
+                         Exibir_Bows(nomeD, ContA, ContB, n); 
+                    }
+                                                                      //O(n) <- onde n é a uma estrura de repetição simples, dependendo do número de palavras de um arquivo   
                     break;
-               case 5:     
-                    DistEuclid(n, ContA, ContB);                            //O(n) <- onde n é a uma estrura de repetição simples, dependendo do número de palavras de um arquivo                                                            
+               case 5:
+                    if(bowAn == 0){
+                         printf("Indique o texto A primeiramente.\n");
+                    } else if(bowBn == 0){
+                         printf("Indique o texto B primeiramente.\n");
+                    } else {
+                         DistEuclid(n, ContA, ContB);
+                    }                                             //O(n) <- onde n é a uma estrura de repetição simples, dependendo do número de palavras de um arquivo                                                            
                     break;
                case 6:
                     printf("Obrigado pela visita e volte sempre!!!\n");     //O(1)
