@@ -5,6 +5,7 @@
 ### C ###
 # Prerequisites
 *.d
+prog
 
 # Object files
 *.o
@@ -54,7 +55,6 @@
 modules.order
 Module.symvers
 Mkfile.old
-./prog
 dkms.conf
 
 ### C++ ###
