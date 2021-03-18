@@ -37,7 +37,6 @@ FILE* leituraTR(char nomeD[], char nomeBow[], int *Cont, int tamCont, int numTR)
         if(strstr(string2,string)!=0)
             Cont[i]++;
     }  
-    arq = fopen(nomeArq, "r");
     fprintf(arqSaida,"%s %d\n", string, Cont[i]);
 
   }
