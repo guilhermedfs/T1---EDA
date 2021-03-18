@@ -3,6 +3,7 @@
 #include "menu.h"
 #include "dicionario.h"
 #include "leituraTR.h"
+#include "DistEuclid.h"
 
 int baz;                                                                //O(1)
 
