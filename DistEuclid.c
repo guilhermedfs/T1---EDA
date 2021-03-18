@@ -10,5 +10,5 @@ void DistEuclid(int PalavrasD, int *Cont1, int *Cont2){
 
     printf("\n----------------------- Similaridade entre os Textos -----------------------\n\n");
 
-    printf("A Distância Euclidiana entre o Texto A e B = %.3f",  Dist);
+    printf("A Distância Euclidiana entre o Texto A e B = %.3f\n\n",  Dist);
 }

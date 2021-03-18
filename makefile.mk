@@ -4,7 +4,7 @@ HEADER	= menu.h dicionario.h leituraTR.h DistEuclid.h
 OUT	= prog
 CC	 = gcc
 FLAGS	 = -g -c -Wall
-LFLAGS	 = 
+LFLAGS	 = -lm
 
 all: $(OBJS)
 	$(CC) -g $(OBJS) -o $(OUT) $(LFLAGS)
