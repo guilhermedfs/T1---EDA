@@ -71,7 +71,7 @@ void Exibir_Bows(char nomeD[], int *ContA, int *ContB, int tamCont){
   for (int i=0; fscanf(arqD, "%s\n", string)!=EOF ; i++)
   {
     if(ContA[i]!=0 || ContB[i]!=0)
-      printf("%s\t|\t%2.d\t|\t%2.d\n", string, ContA[i], ContB[i]);
+      printf("%s\t|\t%d\t|\t%d\n", string, ContA[i], ContB[i]);
   }
 
 
