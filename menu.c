@@ -2,8 +2,8 @@
 #include "menu.h"
 
 void menu(){                                                                //Complexidade por linha de código:
-
-    system("clear || cls") ;                                                //O(1)
+                                               
+                                               
     printf("---------------------------------- BOWS ----------------------------------\n\n"); //O(1)
     printf("1 - Ler arquivo de dicionário\n");                              //O(1)
     printf("2 - Ler arquivo contendo texto de referência A (TRA)\n");       //O(1)

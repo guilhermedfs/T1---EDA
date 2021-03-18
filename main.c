@@ -15,7 +15,8 @@ int main (){
     while(op!=6)                                                        
     {
          menu();                                                        //O(9)
-         scanf("%d", &op);                                              //O(1)
+         scanf("%d", &op); 
+         system("clear || cls") ;                                        //O(1)
          switch (op)                                                    //O(n²) -> complexidade do switch (maior complexidade dentre as opções)
           {                                                                
                case 1:                                                  

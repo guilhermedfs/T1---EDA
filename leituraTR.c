@@ -8,6 +8,7 @@ FILE* leituraTR(char nomeD[], char nomeBow[], int *Cont, int tamCont, int numTR)
   FILE *arq, *arqSaida, *arqD;
   char nomeArq[30], nomeArqSaida[30], string[30], string2[30];
   
+  printf("\n----------------------- Texto de Referencia -----------------------\n\n");
   switch(numTR){
       case 1:
         printf("\nInforme o nome do Texto de Referencia A: ");

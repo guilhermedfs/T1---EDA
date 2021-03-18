@@ -8,6 +8,8 @@ void dicionario(int *n, char *nomeD){
     char c, letra = '\n', nome[100];
 
     int nPalavras = 0;
+
+    printf("\n----------------------- Dicionario -----------------------\n\n");
     printf("\nInsira o nome do dicionário: ");
     scanf("%s", nome);
     strcat(nome, ".txt");
