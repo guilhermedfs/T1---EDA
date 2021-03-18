@@ -37,6 +37,7 @@ FILE* leituraTR(char nomeD[], char nomeBow[], int *Cont, int tamCont, int numTR)
         if(strstr(string2,string)!=0)
             Cont[i]++;
     }  
+    rewind(arq);
     fprintf(arqSaida,"%s %d\n", string, Cont[i]);
 
   }
@@ -61,7 +62,7 @@ void Exibir_Bows(char nomeD[], int *ContA, int *ContB, int tamCont){
 
   printf("\n----------------------- Exibir BOWS -----------------------\n\n");
 
-  printf("Palavras\t\tTextoA\t\tTextoB\n");
+  printf("Palavras\tTextoA\t\tTextoB\n");
 
   for (int i=0; fscanf(arqD, "%s\n", string)!=EOF ; i++)
   {
