@@ -16,7 +16,7 @@ FILE* leituraTR(char nomeD[], char nomeBow[], int *Cont, int tamCont)
   scanf("%s", nomeArqSaida);
   strcat(nomeArqSaida, ".txt");
 
-  strcopy(nomeBow, nomeArqSaida);
+  strcpy(nomeBow, nomeArqSaida);
 
   arq = fopen(nomeArq, "r");
   arqSaida = fopen(nomeArqSaida, "w");
