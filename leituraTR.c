@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <ctype.h>
 #include "leituraTR.h"
 
 FILE* leituraTR(char nomeD[], char nomeBow[], int *Cont, int tamCont, int numTR)
@@ -32,6 +33,15 @@ FILE* leituraTR(char nomeD[], char nomeBow[], int *Cont, int tamCont, int numTR)
   
   for (int i=0;  fscanf(arqD, "%s\n", string)!=EOF  ; i++)
   {
+    
+    for(int i = 0; string[i]; i++){
+      string[i] = tolower(string[i]);
+    }
+
+    for(int i = 0; string2[i]; i++){
+      string2[i] = tolower(string2[i]);
+    }
+
     while (fscanf(arq, "%s", string2)!=EOF)
     {
         if(strstr(string2,string)!=0)
