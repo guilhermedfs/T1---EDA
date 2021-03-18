@@ -1,6 +1,6 @@
-OBJS	= main.o menu.o dicionario.o leituraTR.o
-SOURCE	= main.c menu.c dicionario.c leituraTR.c
-HEADER	= menu.h dicionario.h leituraTR.h
+OBJS	= main.o menu.o dicionario.o leituraTR.o DistEuclid.o
+SOURCE	= main.c menu.c dicionario.c leituraTR.c DistEuclid.c
+HEADER	= menu.h dicionario.h leituraTR.h DistEuclid.h
 OUT	= prog
 CC	 = gcc
 FLAGS	 = -g -c -Wall
@@ -20,6 +20,9 @@ dicionario.o: dicionario.c
 
 leituraTR.o: leituraTR.c
 	$(CC) $(FLAGS) leituraTR.c
+
+DistEuclid.o: DistEuclid.c
+	$(CC) $(FLAGS) DistEuclid.c
 
 clean:
 	rm -f $(OBJS) $(OUT)
