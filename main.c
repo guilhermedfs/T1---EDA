@@ -30,7 +30,7 @@ int main (){
                     bowB=leituraTR(nomeD, nomeBowB, ContB, n, 2);
                     break;
                case 4:                                                  //O(n) <- onde n é a uma estrura de repetição simples, dependendo do número de palavras de um arquivo
-                    Exibir_Bows(bowA, nomeBowA, bowB, nomeBowB);    
+                    Exibir_Bows(nomeD, ContA, ContB, n);    
                     break;
                case 5:                                                  
                     break;

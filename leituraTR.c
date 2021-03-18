@@ -45,7 +45,6 @@ FILE* leituraTR(char nomeD[], char nomeBow[], int *Cont, int tamCont, int numTR)
 
   }
   
-  
 
   
   fclose(arq);
@@ -56,26 +55,25 @@ FILE* leituraTR(char nomeD[], char nomeBow[], int *Cont, int tamCont, int numTR)
 
 }
 
-void Exibir_Bows(FILE* bowA, char nomeBowA[], FILE* bowB, char nomeBowB[]){
+void Exibir_Bows(char nomeD[], int *ContA, int *ContB, int tamCont){
+
+  FILE *arqD;
 
   char string[30];
-  int contA, contB;
 
-  bowA = fopen(nomeBowA, "r");
-  bowB = fopen(nomeBowB, "r");
+  arqD = fopen(nomeD, "r");
 
-  printf("Palavras\t%s\t%s", nomeBowA, nomeBowB);
+  printf("\n----------------------- Exibir BOWS -----------------------\n\n");
 
-  while ( fscanf(bowA, "%s %d\n", string, contA)!=EOF)
+  printf("Palavras\t\tTextoA\t\tTextoB\n");
+
+  for (int i=0; fscanf(arqD, "%s\n", string)!=EOF ; i++)
   {
-    fscanf(bowB, "%s %d\n", string, contB);
-    if(bowA!=0 && bowB!=0)
-      printf("%s\t%d\t%d\n", string, contA, contB);
-  } 
+    if(ContA[i]!=0 || ContB[i]!=0)
+      printf("%s\t|\t%2.d\t|\t%2.d\n", string, ContA[i], ContB[i]);
+  }
 
 
-
-  fclose(bowA);
-  fclose(bowB);
+ fclose(arqD);
 
 }
