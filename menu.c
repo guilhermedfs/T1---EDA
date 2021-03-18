@@ -5,7 +5,6 @@ void menu(){                                                                //Co
 
     system("clear || cls") ;                                                //O(1)
     printf("---------------------------------- BOWS ----------------------------------\n\n"); //O(1)
-    printf("Indique a função a ser executada: \n\n");                       //O(1)
     printf("1 - Ler arquivo de dicionário\n");                              //O(1)
     printf("2 - Ler arquivo contendo texto de referência A (TRA)\n");       //O(1)
     printf("3 - Ler arquivo contendo texto de referência B (TRB)\n");       //O(1)
