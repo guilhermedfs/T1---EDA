@@ -1,4 +1,10 @@
 # T1-EDA
+
+## Integrantes do Grupo (Nome/Matrícula)
+
+- Leonardo Milomes Vitoriano - 201000379
+- 
+
 ## Requerimentos para execução do cógido
 - Makefile
 - GCC
