@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "leituraTR.h"
 
-FILE* leituraTR(char nomeD[], int *Cont, int tamCont)
+FILE* leituraTR(char nomeD[], char nomeBow[], int *Cont, int tamCont)
 {
   FILE *arq, *arqSaida, *arqD;
   char nomeArq[30], nomeArqSaida[30], string[30], string2[30];
@@ -15,7 +15,9 @@ FILE* leituraTR(char nomeD[], int *Cont, int tamCont)
   printf("\nInforme o nome do Arquivo de Saída: ");
   scanf("%s", nomeArqSaida);
   strcat(nomeArqSaida, ".txt");
-  
+
+  strcopy(nomeBow, nomeArqSaida);
+
   arq = fopen(nomeArq, "r");
   arqSaida = fopen(nomeArqSaida, "w");
   arqD = fopen(nomeD, "r");
@@ -43,25 +45,26 @@ FILE* leituraTR(char nomeD[], int *Cont, int tamCont)
 
 }
 
-void Exibir_Bows(FILE* bowA, FILE* bowB){
+void Exibir_Bows(FILE* bowA, char nomeBowA[], FILE* bowB, char nomeBowB[]){
 
-  FILE* arqA, arqB;
   char string[30];
-  int contA;
+  int contA, contB;
 
-  arqA = fopen(bowA, "r");
-  arqB = fopen(bowB, "r");
+  bowA = fopen(nomeBowA, "r");
+  bowB = fopen(nomeBowB, "r");
 
+  printf("Palavras\t%s\t%s", nomeBowA, nomeBowB);
 
-  for (int i=0;  fscanf(arqA, "%s %d\n", string, contA)!=EOF  ; i++)
+  while ( fscanf(bowA, "%s %d\n", string, contA)!=EOF)
   {
-    printf("String arq A = %s - %d\n", string, contA);
+    fscanf(bowB, "%s %d\n", string, contB);
+    if(bowA!=0 && bowB!=0)
+      printf("%s\t%d\t%d\n", string, contA, contB);
+  } 
 
-  }
 
 
-
-  fclose(arqA);
-  fclose(arqB);
+  fclose(bowA);
+  fclose(bowB);
 
 }

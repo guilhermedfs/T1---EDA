@@ -10,7 +10,7 @@ int main (){
     FILE *bowA = NULL;
     FILE *bowB = NULL;
     int op=1, n, *ContA, *ContB;
-    char nomeD[30];
+    char nomeD[30], nomeBowA[30], nomeBowB[30];
 
     while(op!=6)
     {
@@ -24,13 +24,13 @@ int main (){
                     ContB = (int*) calloc(n, sizeof(int));
                     break;
                case 2:
-                    bowA=leituraTR(nomeD, ContA, n);
+                    bowA=leituraTR(nomeD, nomeBowA, ContA, n);
                     break;
                case 3:
-                    bowB=leituraTR(nomeD, ContB, n);
+                    bowB=leituraTR(nomeD, nomeBowB, ContB, n);
                     break;
                case 4:
-                    Exibir_Bows(bowA, bowB);
+                    Exibir_Bows(bowA, nomeBowA, bowB, nomeBowB);
                     break;
                case 5:
                     break;

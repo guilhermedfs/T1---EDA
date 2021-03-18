@@ -2,8 +2,8 @@
 #define LEITURATR_H
 
 
-FILE* leituraTR(char nomeD[], int *Cont, int tamCont);
-void Exibir_Bows(FILE* bowA, FILE* bowB);
+FILE* leituraTR(char nomeD[], char nomeBow[], int *Cont, int tamCont);
+void Exibir_Bows(FILE* bowA, char nomeBowA[], FILE* bowB, char nomeBowB[]);
 
 
 
